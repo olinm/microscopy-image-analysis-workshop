@@ -9,9 +9,11 @@ workshop based on a real tAKT degrader experiment.
 
 1. Click **Open in Google Colab** above.
 2. Sign in to Google if asked.
-3. Choose **Runtime → Run all**, or run each cell with the play button.
-4. The package-installation cell restarts Colab once. This is expected.
-5. Reconnect, rerun that cell once, and continue.
+3. Choose **Runtime → Change runtime type** and select runtime version
+   **2026.07 (Python 3.12)**. Leave the hardware accelerator as **None**.
+4. Run the first package-installation cell. It restarts Colab once; this is
+   expected.
+5. Reconnect, rerun that cell once, and then continue cell by cell.
 
 No local Python, Conda, VS Code or Git installation is required.
 
@@ -41,3 +43,8 @@ for interactive mask editing in napari.
 Google Colab runtimes are temporary. Files and installed packages disappear
 after the runtime is deleted, but the original notebook and workshop data in
 this repository are unaffected.
+
+The workshop currently requires Python 3.12 because StarDist does not yet
+support Colab's Python 3.13 runtime. Colab does not remember the selected past
+runtime between sessions, so check **Runtime version: 2026.07** each time you
+start a new workshop session.
