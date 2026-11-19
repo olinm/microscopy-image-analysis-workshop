@@ -48,3 +48,8 @@ The workshop currently requires Python 3.12 because StarDist does not yet
 support Colab's Python 3.13 runtime. Colab does not remember the selected past
 runtime between sessions, so check **Runtime version: 2026.07** each time you
 start a new workshop session.
+
+The setup cell removes Colab's preinstalled JAX packages after installing the
+TensorFlow/StarDist stack. The workshop does not use JAX, and leaving it
+installed causes an incompatible `ml_dtypes` requirement that prevents
+StarDist from importing.
