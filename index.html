@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Microscopy Pipeline Awakens</title>
+  <style>
+    :root { color-scheme: dark; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, sans-serif;
+      background:
+        radial-gradient(circle at 20% 15%, #152447 0 1px, transparent 2px),
+        radial-gradient(circle at 80% 30%, #fff 0 1px, transparent 2px),
+        radial-gradient(circle at 55% 75%, #3263a8 0 1px, transparent 2px),
+        #05070d;
+      background-size: 180px 180px, 240px 240px, 310px 310px;
+      color: #f7f7f2;
+    }
+    main {
+      width: min(900px, calc(100% - 32px));
+      padding: 64px 28px;
+      text-align: center;
+    }
+    .eyebrow {
+      color: #82aef5;
+      font-size: .82rem;
+      font-weight: 750;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 18px auto;
+      max-width: 760px;
+      color: #f3d34a;
+      font-size: clamp(2.5rem, 7vw, 5.5rem);
+      line-height: .98;
+      letter-spacing: -.04em;
+    }
+    .lead {
+      max-width: 690px;
+      margin: 24px auto 36px;
+      color: #d7d9df;
+      font-size: clamp(1.05rem, 2.4vw, 1.35rem);
+      line-height: 1.6;
+    }
+    .button {
+      display: inline-block;
+      padding: 16px 25px;
+      border-radius: 12px;
+      background: #f3d34a;
+      color: #15130a;
+      font-weight: 800;
+      text-decoration: none;
+      box-shadow: 0 10px 35px rgb(243 211 74 / 22%);
+    }
+    .button:hover { background: #ffe76a; transform: translateY(-1px); }
+    .note { margin-top: 22px; color: #9ca3b2; font-size: .93rem; }
+    .channels {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 48px;
+    }
+    .chip { border: 1px solid #303747; border-radius: 999px; padding: 8px 13px; }
+    .nuclei { color: #68a0ff; }
+    .cells { color: #61cf7d; }
+    .takt { color: #f070a5; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="eyebrow">A microscopy image-analysis taster</div>
+    <h1>The Microscopy Pipeline Awakens</h1>
+    <p class="lead">
+      Go from pixels to a biological conclusion using a real tAKT degrader
+      experiment. This should work directly in your browser, with no Python
+      setup required (Google Colab resources pending).
+    </p>
+    <a class="button" href="https://colab.research.google.com/github/olinm/microscopy-image-analysis-workshop/blob/main/01_WORKSHOP_COLAB.ipynb">
+      Launch the workshop in Colab
+    </a>
+    <div class="note">Google sign-in required · the first package setup takes a few minutes</div>
+    <div class="channels" aria-label="Microscopy channels">
+      <span class="chip nuclei">Hoechst · nuclei</span>
+      <span class="chip cells">HCSGreen · cells</span>
+      <span class="chip takt">tAKT-A647 · protein signal</span>
+    </div>
+  </main>
+</body>
+</html>
